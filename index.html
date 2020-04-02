@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jiggly form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="form-box">
+        <div class="box-head">
+            JIGGLY
+            <img src="https://www.pngkey.com/png/full/972-9723549_jigglypuff-sticker-jigglypuff-icon.png" width="50px"
+                alt='jigglypuff'>
+            FORM
+        </div>
+
+        <form novalidate>
+            <div class='f-box'>
+                <label for='name'>Name</label>
+                <input type="text" id='name' name="name" required>
+                <span></span>
+                <img class='name'
+                    src="https://www.pngkey.com/png/full/972-9723549_jigglypuff-sticker-jigglypuff-icon.png"
+                    width="30px" alt='jigglypuff'>
+            </div>
+
+            <div class='f-box'>
+                <label for='email'>Email</label>
+                <input type="email" id='email' name="email" required>
+                <span></span>
+                <img class='email'
+                    src="https://www.pngkey.com/png/full/972-9723549_jigglypuff-sticker-jigglypuff-icon.png"
+                    width="30px" alt='jigglypuff'>
+            </div>
+
+            <div class='f-box'>
+                <label for='zip'>Zip code</label>
+                <input type="text" id='zip' name="zip" pattern="^\d{6}$" required>
+                <span></span>
+                <img class='zip'
+                    src="https://www.pngkey.com/png/full/972-9723549_jigglypuff-sticker-jigglypuff-icon.png"
+                    width="30px" alt='jigglypuff'>
+            </div>
+
+            <div class='f-box'>
+                <label for='pass'>Password</label>
+                <input type="password" id='pass' name="pass" pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z]).{6,}$" required>
+                <span></span>
+                <img class='pass'
+                    src="https://www.pngkey.com/png/full/972-9723549_jigglypuff-sticker-jigglypuff-icon.png"
+                    width="30px" alt='jigglypuff'>
+            </div>
+
+            <div class='f-box'>
+                <label for='passc'>Password confirmation</label>
+                <input type="password" id='passc' name="passc" pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z]).{6,}$" required>
+                <span></span>
+                <img class='passc'
+                    src="https://www.pngkey.com/png/full/972-9723549_jigglypuff-sticker-jigglypuff-icon.png"
+                    width="30px" alt='jigglypuff'>
+            </div>
+
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

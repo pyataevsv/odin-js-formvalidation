@@ -1,0 +1,148 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Baloo Thambi 2', bold;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+  body,html {
+    min-height: 100%;
+  }
+
+body {
+    background-image: linear-gradient(145deg, #4400ffcc, #8841c1c7, #f154a4b5);
+    padding: 1px;
+}
+
+.form-box {
+    /* display: inline-block; */
+    border: 1px solid wheat;
+    margin: 50px auto 0px auto;
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(255, 255, 255),white);
+    z-index: 1;
+}
+
+.box-head {
+    text-align: center;
+    font-family: 'Modak', cursive;
+    font-size: 50px;
+    background: -webkit-linear-gradient(#ff00d8, #fbff14);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0px;
+}
+
+label {
+    display: block;
+    font-size: 120%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    outline: none;
+    height: 50px;
+}
+
+button {
+    margin-top: 10px;
+    border-radius: 5px;
+    background-image: linear-gradient(145deg,#ffcf21, #f154b9)
+}
+
+form input {
+    border-radius: 5px;
+    border: 1px solid #b1b1b1;
+    /* z-index: -2; */
+}
+
+.invalid {
+    border: 2px solid rgb(107, 72, 254);
+}
+
+.valid {
+    border: 2px solid rgb(255, 143, 232);
+}
+
+form span {
+    font-size: 90%;
+    margin-left: 5px;
+}
+
+.error {
+    color: rgb(107, 72, 254);
+}
+
+.f-box {
+    position: relative;
+}
+
+.f-box img{
+    position: absolute;
+    right: 10px;
+    top: 33px;
+    opacity: 0;
+    transition: 1s;
+    z-index: 0;
+}
+
+img.validi {
+    opacity: 1;
+    transition: 1s;
+    right: 10px;
+    -ms-transform: rotate(360deg); /* IE 9 */
+    transform: rotate(360deg); /* Standard syntax */
+}
+
+
+.box-head > img.submit {
+    -ms-transform: rotate(360deg); /* IE 9 */
+    transform: rotate(360deg); /* Standard syntax */
+    transition: 2s;
+}
